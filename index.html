@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <button onclick="butt()"> BLACK</button>
+
+
+    <script>
+     //6
+    function butt(){
+     document.getElementById("para").style="color: white;background-color:black;"
+    }
+
+      //1
+      const hello=() =>
+    console.log("Antony");
+    hello();
+
+    //2
+
+  const sum=(a,b) => a+b;
+     console.log(sum(3,5));
+
+    //3
+  
+  const sq=(a) => a*a;
+     console.log(sq(7));
+
+      //array intialization & creation
+      var arr = [1,5,2,3,1,4,2,6,8];
+        console.log(arr);
+    //array length
+        console.log(arr.length);
+    //array index
+        console.log("element in 0 index is "+arr[0]);
+        console.log("element in 1 index is "+arr[1]);
+    //array manipulation (adding elements)
+        arr.push(5);
+        console.log(arr);
+        arr.unshift(9);
+        console.log(arr);
+    //array manipulation(removing elements)
+        arr.pop();
+        console.log(arr);
+        arr.shift();
+        console.log(arr);
+    //array searching
+        console.log(arr.indexOf(4));
+    //array filtering
+        let evenNum = arr.filter(arr => arr % 2 == 0);
+        console.log(evenNum);
+    //array sorting
+        arr.sort();
+        console.log(arr);
+    //array reverse
+        arr.reverse();
+        console.log(arr);
+
+    
+    // 4
+    const fl={
+   fname:"Antony",
+   lname:" Samy",
+   name:function(){
+    console.log(this.fname + this.lname);
+   }
+   }
+   fl.name();
+  //array maximum and minimum
+        console.log("Largest Number in the array is "+Math.max(...arr));
+        console.log("smallest Number in the array is "+Math.min(...arr));
+        
+
+
+    </script>  
+    
+</body>
+</html>
